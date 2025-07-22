@@ -25,6 +25,7 @@
    ```bash
    git clone https://github.com/IvanShulga72/health-tech-test-task
    cd health-tech-test-task
+   npm i
    
 2. Создать файл .env и записать туда строку
 
