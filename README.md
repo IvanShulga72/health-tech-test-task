@@ -23,7 +23,7 @@
   
 1. Выполнить команды:
    ```bash
-   git clone https://github.com/ваш-username/medcontrol-chat.git
+   git clone https://github.com/IvanShulga72/health-tech-test-task
    cd medcontrol-chat
    
 2. Создать файл .env и записать туда строку
