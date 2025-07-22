@@ -24,7 +24,7 @@
 1. Выполнить команды:
    ```bash
    git clone https://github.com/IvanShulga72/health-tech-test-task
-   cd medcontrol-chat
+   cd health-tech-test-task
    
 2. Создать файл .env и записать туда строку
 
