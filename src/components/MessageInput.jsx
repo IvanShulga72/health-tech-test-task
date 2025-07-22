@@ -70,10 +70,9 @@ const MessageInput = () => {
                     onChange={(e) => setMessage(e.target.value)}
                     onKeyDown={handleKeyDown}
                     placeholder="Введите сообщение..."
-                    className="flex-grow p-3 border rounded focus:outline-none resize-none"
+                    className="flex-grow p-3 border focus:outline-none resize-none rounded-l"
                     disabled={isLoading}
-                    rows={3}
-                    style={{maxHeight: '50px'}}
+                    rows={1}
                 />
                 <button
                     type="submit"
