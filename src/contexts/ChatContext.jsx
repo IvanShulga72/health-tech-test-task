@@ -4,14 +4,6 @@ const ChatContext = createContext();
 
 export const useChatContext = () => useContext(ChatContext);
 
-const deleteChat = (chatId) => {
-    setChats(prev => prev.filter(chat => chat.id !== chatId));
-    // Если удаляем активный чат, переключаемся на первый доступный
-    if (activeChatId === chatId) {
-        setActiveChatId(chats[0]?.id || '');
-    }
-};
-
 
 export const ChatProvider = ({ children }) => {
     // Загрузка данных из localStorage при инициализации
