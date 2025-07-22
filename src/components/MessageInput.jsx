@@ -54,16 +54,26 @@ const MessageInput = () => {
         }
     };
 
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            handleSubmit(e);
+        }
+    };
+
     return (
         <form onSubmit={handleSubmit} className="p-4 border-t">
             <div className="flex">
-                <input
-                    type="text"
+                <textarea
+                    name='textarea'
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
+                    onKeyDown={handleKeyDown}
                     placeholder="Введите сообщение..."
-                    className="flex-grow p-3 border rounded-l focus:outline-none"
+                    className="flex-grow p-3 border rounded focus:outline-none resize-none"
                     disabled={isLoading}
+                    rows={3}
+                    style={{maxHeight: '50px'}}
                 />
                 <button
                     type="submit"

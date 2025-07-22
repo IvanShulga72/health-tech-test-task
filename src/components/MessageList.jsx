@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { useChatContext } from '../contexts/ChatContext';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
-import 'highlight.js/styles/github-dark.css'; // Стили для подсветки кода
+import 'highlight.js/styles/github-dark.css';
 
 const MessageList = () => {
     const { chats, activeChatId } = useChatContext();
